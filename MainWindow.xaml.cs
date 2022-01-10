@@ -38,7 +38,6 @@ namespace Sekretariacik
         public static Key photoKey = Key.F;
         public static Key editKey = Key.E;
         public static string PROGNAME = "Sekretariacik (c) Filip Jurczuk v0.1";
-        //public static MainWindowTitle = new Binding("MainWindowTitle");
     }
     public enum DateSearch
     {
@@ -53,11 +52,7 @@ namespace Sekretariacik
         Edit,
         AddPhoto
     }
-    /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>
-    //private string DATE_FORMAT = "dd/MM/yyyy";
-    //List<Uczen> usersFromFile = new List<Uczen>();
     public partial class MainWindow : Window
     {
  
@@ -345,8 +340,6 @@ namespace Sekretariacik
         {
             var fileContent = string.Empty;
             var filePath = string.Empty;
-            //using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            //{
             Debug.WriteLine("Otwieram okno wyboru pliku");
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = "c:\\Users\\filip\\source\\";
@@ -464,10 +457,6 @@ namespace Sekretariacik
                     Helpers.ExportData<List<Pracownik>>(ref writeList, filePath);
                 }
             }
-            //}
-            //}
-
-            //MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
         }
 
         /// Edycja Danych !

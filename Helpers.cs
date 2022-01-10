@@ -80,7 +80,7 @@ namespace Sekretariacik
 
             return pracownicy;
         }
-        // funcje generyczne - Tato wytłumaczył co to jest :)
+        // funcje generyczne
         // zamiast 3 funkcji dla Ucznia, Nauczyciela, Pracownika do pobierania danych można uzyć jednej
         // a zwracany typ jest częscią wywołania
         // funkcja generyczna to taka, gdzie nie znamy typy argumentów, albo zwracanego typu przed wywowołaniem
